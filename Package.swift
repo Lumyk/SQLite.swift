@@ -9,7 +9,7 @@ let package = Package(
         .target(name: "SQLiteObjc"),
         .testTarget(name: "SQLiteTests", dependencies: ["SQLite"], path: "Tests/SQLiteTests")
     ],
-    swiftLanguageVersions: [4]
+    swiftLanguageVersions: [4, 5]
 )
 
 package.dependencies = [.package(url: "https://github.com/stephencelis/CSQLite.git", from: "0.0.3")]
